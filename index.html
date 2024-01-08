@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-
+	<script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -21,35 +21,55 @@
     </label>
 
     <ul class="menu__box">
-      <li><a class="menu__item" href="#skills">Skills</a></li>
-      <li><a class="menu__item" href="#experience">Experience</a></li>
-      <li><a class="menu__item" href="#education">Education</a></li>
-      <li><a class="menu__item" href="#aboutMe">About</a></li>
-      <li><a class="menu__item" target="_blank" href="https://drive.google.com/u/0/uc?id=15mt1zYoGS_yo1Q147q6xLg-stxPD8dmb&amp;export=download">Download CV
+	  <li><a class="menu__item" href="#skills"><en>Skills</en><ru>Навыки</ru></a></li>
+			<li><a class="menu__item" href="#projects"><en>Projects</en><ru>Проекты</ru></a></li>
+			<li><a class="menu__item" href="#education"><en>Education</en><ru>Образование</ru></a></li>
+			<li><a class="menu__item" href="#experience"><en>Experience</en><ru>Опыт</ru></a></li>
+			<li><a class="menu__item" href="#aboutMe"><en>About Me</en><ru>Обо мне</ru></a></li>
+      <en style="display: block;"><li><a class="menu__item" target="_blank" href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1j1zmBvYWOKjTgQv7aQZEjtSl0d-yJcfh">Download CV En
 				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16" style="position: relative; left: 5px; top: 6px;">
   <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
 </svg>
-			</a>
+			</a></li></en>
+			<ru style="display: block;"><li><a class="menu__item" target="_blank" href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1Zyp3OQ0uMM05kydSvrMlp_dw7FE4HTDM">Скачать резюме Ru
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16" style="position: relative; left: 5px; top: 6px;">
+  <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+</svg>
+			</a></li></ru>
+			<li><select id="ls-mobile" onchange="loc.SelectLanguage(this.options[this.selectedIndex].value)">
+				<option value="en">English</option>
+				<option value="ru">Русский</option>
+			  </select></li>
     </ul>
   </div>
 		<nav style="position: absolute;">
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#aboutMe">About</a></li>
+			<li><a href="#skills"><en>Skills</en><ru>Навыки</ru></a></li>
+			<li><a href="#projects"><en>Projects</en><ru>Проекты</ru></a></li>
+			<li><a href="#education"><en>Education</en><ru>Образование</ru></a></li>
+			<li><a href="#experience"><en>Experience</en><ru>Опыт</ru></a></li>
+			<li><a href="#aboutMe"><en>About Me</en><ru>Обо мне</ru></a></li>
 		</nav>
 		<nav>
-			<li><a target="_blank" href="https://drive.google.com/u/0/uc?id=15mt1zYoGS_yo1Q147q6xLg-stxPD8dmb&amp;export=download">Download CV
+			<li><select id="ls" onchange="loc.SelectLanguage(this.options[this.selectedIndex].value)">
+				<option value="en">English</option>
+				<option value="ru">Русский</option>
+			  </select></li>
+			  <en><li><a target="_blank" href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1j1zmBvYWOKjTgQv7aQZEjtSl0d-yJcfh">Download CV En
 				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16" style="position: relative; left: 5px; top: 6px;">
   <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
 </svg>
-			</a></li>
+			</a></li></en>
+			<ru><li><a target="_blank" href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1Zyp3OQ0uMM05kydSvrMlp_dw7FE4HTDM">Скачать резюме Ru
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16" style="position: relative; left: 5px; top: 6px;">
+  <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+</svg>
+			</a></li></ru>
 		</nav>
 	</header>
 			<div class="name-age">
-		<h1>ARTUR PRONIN</h1>
-		<h3>Fullstack developer</h3>
-		<h4>23 years old, ready for relocate or business trips</h4>
+		<h1><en>ARTUR PRONIN</en><ru>АРТУР ПРОНИН</ru></h1>
+		<h3><en>Java developer</en><ru>Java разработчик</ru></h3>
+		<h4><en>24 years old, ready for relocate or business trips</en><ru>24 года, готов к командировкам и переезду</ru></h4>
 		</div>
 		<hr id="hr_nav">
 		<div style="overflow-x: hidden;">
@@ -92,7 +112,7 @@
 </div>
 	</section>
 	<section id="skills" class="our-work">
-		<h3 class="title">Skills</h3>
+		<h3 class="title"><en>Skills</en><ru>Навыки</ru></h3>
 		<hr>
 		<div class="skills">
 		<div>
@@ -112,19 +132,19 @@
 			</ul>
 		</div>
 	</div>
-	<h3 class="title">Language Skills</h3>
+	<h3 class="title"><en>Language Skills</en><ru>Языки</ru></h3>
 	<hr>
 	<div class="lg-skills">
 		<ul>
-				<li>Russian: native</li>
+				<li><en>Russian: native</en><ru>Русский: носитель</ru></li>
 				<li>English: pre-intermediate</li>
 			</ul>
 	</div>
 		</section>
 	
 
-	<section id="experience" class="features">
-		<h3 class="title">Experience</h3>
+	<section id="projects" class="features">
+		<h3 class="title"><en>Projects</en><ru>Проекты</ru></h3>
 <hr>
 		
 		
@@ -133,27 +153,31 @@
 				<div style="text-align: center;width: 100% !important;">
 				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="80" height="80" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1920 1664"><path fill="currentColor" d="M1792 992V160q0-13-9.5-22.5T1760 128H160q-13 0-22.5 9.5T128 160v832q0 13 9.5 22.5t22.5 9.5h1600q13 0 22.5-9.5t9.5-22.5zm128-832v1088q0 66-47 113t-113 47h-544q0 37 16 77.5t32 71t16 43.5q0 26-19 45t-45 19H704q-26 0-45-19t-19-45q0-14 16-44t32-70t16-78H160q-66 0-113-47T0 1248V160Q0 94 47 47T160 0h1600q66 0 113 47t47 113z"></path></svg>
 			</div>
-				<h4>Web application. University graduation project</h4>
-				<p>Web application for processing orders for a company producing plastic food packaging.
-					Stack: Backend in Java 1.8, Spring, PostgreSQL, frontend development in HTML, CSS, Freemarker.
-				</p><p>Source code: 
-					<a href="https://github.com/ArturPronin/blastor"> https://github.com/ArturPronin/blastor</a>
+				<h4><en>Web application. University graduation project</en><ru>Веб-приложение. Дипломный проект в университете</ru></h4>
+				<p><en>Web application for processing orders for a company producing plastic food packaging.
+					Stack: Backend in Java 1.8, Spring, PostgreSQL, frontend development in HTML, CSS, Freemarker.</en>
+					<ru>Веб-приложение для обработки заказов для компании, производящей пластиковую упаковку для пищевых продуктов.
+						Стек: Бэкенд на Java 1.8, Spring, PostgreSQL, разработка интерфейса на HTML, CSS, Freemarker.</ru>
+				</p><p><en>Source code:</en><ru>Исходники:</ru>
+					<a href="https://github.com/ArturPronin/blastor"><en>Blastor</en><ru>Бластор</ru></a>
 			</p>
 			</div>
 			<div>
 				<div style="text-align: center;text-align: center;width: 100% !important;">
 					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="80" height="80" preserveAspectRatio="xMidYMid meet" viewBox="0 0 768 1280"><path fill="currentColor" d="M464 1152q0-33-23.5-56.5T384 1072t-56.5 23.5T304 1152t23.5 56.5T384 1232t56.5-23.5T464 1152zm208-160V288q0-13-9.5-22.5T640 256H128q-13 0-22.5 9.5T96 288v704q0 13 9.5 22.5t22.5 9.5h512q13 0 22.5-9.5T672 992zM480 144q0-16-16-16H304q-16 0-16 16t16 16h160q16 0 16-16zm288-16v1024q0 52-38 90t-90 38H128q-52 0-90-38t-38-90V128q0-52 38-90t90-38h512q52 0 90 38t38 90z"></path></svg>
 				</div>
-				<h4 style="margin-top: -10px;text-align: center;">Mobile application for Android. University project</h4>
-				<p>Mobile application (chat messenger) for communication, features: chat, video calls,chatbot.
-					Stack: backend in Java 1.8, Jitsi, AndroidX, frontend in XML.</p>
+				<h4 style="margin-top: -10px;text-align: center;"><en>Mobile application for Android. University project</en><ru>Мобильное приложение на Android. Университетский проект</ru></h4>
+				<p><en>>Mobile application (chat messenger) for communication, features: chat, video calls,chatbot.
+					Stack: backend in Java 1.8, Jitsi, AndroidX, frontend in XML.</en</p>
+					<ru>Мобильное приложение (чат-мессенджер) для общения, функции: чат, видеозвонки, чат-бот.
+					Стек: серверная часть на Java 1.8, Jitsi, AndroidX, интерфейс на XML.</ru>
 					<p>
-						Source code: 
-						<a href="https://github.com/ArturPronin/corpCryptoChat">https://github.com/ArturPronin/corpCryptoChat</a>
+						<en>Source code:</en><ru>Исходники:</ru>
+						<a href="https://github.com/ArturPronin/corpCryptoChat"><en>Android messenger</en><ru>Android мессенджер</ru></a>
 					</p>
 					<p>
-						Server for the application: 
-						<a href="https://github.com/ArturPronin/corp-chat-server">https://github.com/ArturPronin/corp-chat-server</a>
+						<en>Server for the android app:</en><ru>Сервер для приложения Android:</ru>
+						<a href="https://github.com/ArturPronin/corp-chat-server"><en>Server for android messenger</en><ru>Сервер для android мессенджера</ru></a>
 					</p>
 			</div>
 			<div>
@@ -162,36 +186,89 @@
 			</div>
 				<h4 style="
     text-align: center;
-">Telegram BOT</h4>
+"><en>Telegram BOT</en><ru>Телеграм Бот</ru></h4>
 				
-				<p>Telegram bot for text translation. With the ability to voice remarks and translate documents.
-				Stack: backend Java in 1.14, Telegrambots API, YandexCloud API, frontend in available telegram tools (buttons, commands).</p>
+				<p><en>Telegram bot for text translation. With the ability to voice remarks and translate documents.
+				Stack: backend Java in 1.14, Telegrambots API, YandexCloud API, frontend in available telegram tools (buttons, commands).</en>
+				<ru>Telegram-бот для перевода текста. С возможностью озвучивать замечания и переводить документы.
+				Стек: серверная часть Java в версии 1.14, Telegrambots API, YandexCloud API, интерфейс в доступных инструментах telegram (кнопки, команды).</ru>
+			</p>
 				<p>
-				Source code: 
-						<a href="https://github.com/ArturPronin/corp-chat-server">https://github.com/ArturPronin/corp-chat-server</a>
+				<en>Source code:</en><ru>Исходники:</ru> 
+						<a href="https://github.com/ArturPronin/telegramTranslatorBot"><en>Telegram BOT translator</en><ru>Телеграм БОТ переводчик</ru></a>
 				</p>
 			</div>
 		</div>
 		</section>
 
 	<section id="education" class="reviews">
-		<h3 class="title">Education</h3>
+		<h3 class="title"><en>Education</en><ru>Образование</ru></h3>
 		<hr>
-		<p class="quote" style="font-weight: bold;">September 2017 - July 2021 - Kazan State Power Engineering University (KSPEU). Bachelor's degree.</p>
-		<p class="quote">Studied in the direction "Computer science and computer engineering" on the profile: "Software for computer technology and automated systems."</p>
-		<p class="quote">Studied subjects related to information systems design, database modeling, software interface development, mobile application development.</p>
+		<p class="quote" style="font-weight: bold;"><en>September 2017 - July 2021 - Kazan State Power Engineering University (KSPEU). Bachelor's degree.</en>
+		<ru>Сентябрь 2017 г. - Июль 2021 г. - Казанский государственный энергетический университет (КГЭУ). Степень бакалавра.</ru></p>
+		<p class="quote"><en>Studied in the direction "Computer science and computer engineering" on the profile: "Software for computer technology and automated systems."</en>
+		<ru>Обучался по направлению: "Информатика и вычислительная техника" по профилю: "Программное обеспечение для вычислительной техники и автоматизированных систем".</ru></p>
+		<p class="quote"><en>Studied subjects related to information systems design, database modeling, software interface development, mobile application development.</en>
+		<ru>Изучал предметы, связанные с проектированием информационных систем, моделированием баз данных, разработкой программного интерфейса, разработкой мобильных приложений.</ru></p>
 	</section>
 
+	<section id="expirience" class="reviews">
+		<h3 class="title"><en>Experience</en><ru>Опыт</ru></h3>
+		<hr>
+		<p class="quote" style="font-weight: bold;"><en>July 2020 – July 2021 - ООО «Event-Pro»: Technical Support Specialist.</en>
+			<ru>Июль 2020 г. – Июль 2021 г. - ООО «Эвент-Про»: Специалист службы технической поддержки.</ru></p>
+		<p class="quote"><en>Provided customer support via email and live chat. He solved technical
+			problems with the company's software and hardware. He trained clients to work
+			with the company's products. He collaborated with other departments of the
+			company to solve complex technical problems.</en>
+		<ru>Осуществлял поддержку клиентов по электронной почте и через чат.
+			Решал технические проблемы с программным обеспечением и
+			оборудованием компании. Обучал клиентов работе с продуктами
+			компании. Сотрудничал с другими отделами компании для решения
+			сложных технических проблем.</ru></p>
+		
+		<p class="quote" style="font-weight: bold;"><en>September 2021 – October 2022 – ООО «CES»: Engineer of the production and technical department.</en>
+			<ru>Сентябрь 2021 г. – Октябрь 2022 г. – ООО «КИР»: Инженер производственно-технического отдела.</ru></p>
+		<p class="quote"><en>I developed and accompanied the executive technical documentation, checked
+			the completed work according to the project documentation and standards,
+			defended the completed work to the customer, conducted system testing.</en>
+		<ru>Осуществлял поддержку клиентов по электронной почте и через чат.
+			Разрабатывал и сопровождал исполнительную техническую
+			документацию, проверял выполненные работы согласно проектной
+			документации и нормам, защищал выполненные работы перед
+			заказчиком, проводил тестирование систем.</ru></p>
+	</section>
+	
 	<section id="aboutMe" class="contact">
-		<h3 class="title">About Me</h3>
+		<h3 class="title"><en>About Me</en><ru>Обо мне</ru></h3>
 		<hr>
 		<div id="about-me" style="">
 			<div>
 				<p style="text-align: left;">
-					I am passionate about programming, most of my free time is devoted to it.
-					Also I like to walk, travel around the country, the world, read books.
-					I like active recreation, play volleyball, ride a bike, play board and team games.
-					I find common language with people well, have a responsible attitude to tasks, build time management, have a positive attitude to constructive and reasonable criticism.
+					<en>I am an active and dedicated specialist in the field of programming and
+						computer technology. I have a high level of communication, analytical and
+						organizational skills, as well as the ability to learn new things quickly and
+						effectively. I am not afraid of difficult and interesting tasks, but on the contrary,
+						I am looking for solutions with pleasure and creativity. I am able to work in a
+						team and independently, adapt to different conditions and situations. I love my
+						profession and strive for continuous development and professional
+						development. To do this, I regularly attend various courses, webinars and
+						conferences, as well as participate in professional communities. In my free
+						time, I read, travel, spend time outdoors and do sports.
+				</en>
+				<ru>
+					Я - активный и целеустремленный специалист в области программирования
+					и компьютерной техники. Я обладаю высоким уровнем коммуникативных,
+					аналитических и организационных навыков, а также способностью быстро
+					и эффективно обучаться новому. Я не боюсь сложных и интересных задач, а
+					наоборот, ищу их решения с удовольствием и творчеством. Я умею работать
+					в команде и самостоятельно, адаптироваться к разным условиям и
+					ситуациям. Я люблю свою профессию и стремлюсь к постоянному
+					развитию и повышению квалификации. Для этого я регулярно посещаю
+					различные курсы, вебинары и конференции, а также участвую в
+					профессиональных сообществах. В свободное время я читаю, путешествую,
+					провожу время на природе и занимаюсь спортом.
+				</ru>
 				</p>
 			</div>
 			<div id="photo">
@@ -203,79 +280,12 @@
 
 	<footer>
 		
-		<p>© Made by <a href="https://github.com/arturpronin" target="_blank">Artur Pronin</a></p>
+		<p><en>© Made by</en><ru>© Разработал</ru> <a href="https://github.com/arturpronin" target="_blank"><en>Artur Pronin</en><ru>Артур Пронин</ru></a></p>
 		
 	</footer>
 
 	<a href="#" id="toTop" class="">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="35px" xml:space="preserve"><path d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2  c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2  c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z"></path></svg>
     </a>
-
-	<script>
-		const anchors = document.querySelectorAll('a[href*="#"]')
-
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
-	</script>
-	<script type="text/javascript">
-		function scrollTo(to, duration = 700) {
-    const
-        element = document.scrollingElement || document.documentElement,
-        start = element.scrollTop,
-        change = to - start,
-        startDate = +new Date(),
-        // t = current time
-        // b = start value
-        // c = change in value
-        // d = duration
-        easeInOutQuad = function (t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        },
-        animateScroll = function () {
-            const currentDate = +new Date();
-            const currentTime = currentDate - startDate;
-            element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
-            if (currentTime < duration) {
-                requestAnimationFrame(animateScroll);
-            }
-            else {
-                element.scrollTop = to;
-            }
-        };
-    animateScroll();
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    let btn = document.querySelector('#toTop');
-    window.addEventListener('scroll', function () {
-        // Если прокрутили дальше 599px, показываем кнопку
-        if (pageYOffset > 100) {
-            btn.classList.add('show');
-            // Иначе прячем
-        } else {
-            btn.classList.remove('show');
-        }
-    });
-
-    // При клике прокручиываем на самый верх
-    btn.onclick = function (click) {
-        click.preventDefault();
-        scrollTo(0, 400);
-    }
-});
-	</script>
 
 </body></html>
